@@ -21,6 +21,10 @@ Examples:
 Notes:
 - Return the name of the data type as a lowercase string.
 """
-def data_type(value):
-    # Your code here
+import datetime
 
+def data_type(value):
+    full_term = {"dict": "dictionary", "str": "string", "int": "integer", "bool": "boolean", "date": "date", "float": "float", "list": "list" }
+    return full_term[type(value).__name__]
+
+print(data_type(5.25))

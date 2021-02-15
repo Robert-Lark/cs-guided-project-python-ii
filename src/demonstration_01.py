@@ -17,4 +17,12 @@ Notes:
 
 def last(a, n):
     # Your code here
-
+    if n > len(a):
+        return "invalid"
+    elif n <= 0:
+        return []
+        #print everything from the nth position to the end of the array
+    print(a[-n:])
+    
+last([1, 2, 3, 4, 5], 1)
+last([4, 3, 9, 9, 7, 6], 3) 

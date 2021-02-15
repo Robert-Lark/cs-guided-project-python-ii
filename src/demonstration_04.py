@@ -24,5 +24,6 @@ Notes:
 
 
 def emotify(txt):
-    # Your code here
-
+    emojis = {"smile": ":)", "grin": ":D", "sad": ":(" }
+    return "Make me" + emojis[txt.split(" ")[2]]
+print(emotify("Make me sad"))

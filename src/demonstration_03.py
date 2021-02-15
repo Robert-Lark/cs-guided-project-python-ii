@@ -15,5 +15,11 @@ Notes:
 
 
 def multiply_nums(nums):
-    # Your code here
+    numbers = nums.split(', ')
+    result = 1
+    for number in numbers:
+        num = int(number)
+        result = result * num
+    return result 
 
+print(multiply_nums("1, 2, 3, 4"))
